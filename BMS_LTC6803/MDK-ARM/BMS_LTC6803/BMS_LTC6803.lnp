@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp
+"bms_ltc6803\startup_stm32f446xx.o"
+"bms_ltc6803\system_stm32f4xx.o"
+"bms_ltc6803\main.o"
+"bms_ltc6803\stm32f4xx_it.o"
+"bms_ltc6803\stm32f4xx_hal_msp.o"
+"bms_ltc6803\stm32f4xx_hal_rcc_ex.o"
+"bms_ltc6803\stm32f4xx_hal_tim.o"
+"bms_ltc6803\stm32f4xx_hal_flash.o"
+"bms_ltc6803\stm32f4xx_hal_flash_ramfunc.o"
+"bms_ltc6803\stm32f4xx_hal_tim_ex.o"
+"bms_ltc6803\stm32f4xx_hal_spi.o"
+"bms_ltc6803\stm32f4xx_hal.o"
+"bms_ltc6803\stm32f4xx_hal_flash_ex.o"
+"bms_ltc6803\stm32f4xx_hal_pwr.o"
+"bms_ltc6803\stm32f4xx_hal_gpio.o"
+"bms_ltc6803\stm32f4xx_hal_pwr_ex.o"
+"bms_ltc6803\stm32f4xx_hal_dma.o"
+"bms_ltc6803\stm32f4xx_hal_cortex.o"
+"bms_ltc6803\stm32f4xx_hal_dma_ex.o"
+"bms_ltc6803\stm32f4xx_hal_rcc.o"
+"bms_ltc6803\lt_spi.o"
+"bms_ltc6803\ltc6803.o"
+--library_type=microlib --strict --scatter "BMS_LTC6803\BMS_LTC6803.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BMS_LTC6803.map" -o BMS_LTC6803\BMS_LTC6803.axf
